@@ -1,5 +1,6 @@
 {
   "departments": [
+    { "name": "DADS | SHINAGAWA HEALTHCARE" },
     { "name": "employee" },
     { "name": "admin" },
     { "name": "INFINIVAN" },
@@ -16,39 +17,506 @@
     { "name": "CITIMAX-SECURITY GUARD" },
     { "name": "STEEL ASIA MANUFACTURING" }
   ],
+  "locations": [
+    { "id": "server-room", "name": "Server Room", "floor": "1st Floor" },
+    { "id": "office-1", "name": "Office Room 1", "floor": "1st Floor" },
+    { "id": "office-2", "name": "Office Room 2", "floor": "2nd Floor" },
+    { "id": "conference-room", "name": "Conference Room", "floor": "2nd Floor" },
+    { "id": "lobby", "name": "Lobby", "floor": "Ground Floor" },
+    { "id": "cafeteria", "name": "Cafeteria", "floor": "Ground Floor" },
+    { "id": "warehouse", "name": "Warehouse", "floor": "Ground Floor" },
+    { "id": "engineering", "name": "Engineering Lab", "floor": "3rd Floor" },
+    { "id": "security", "name": "Security Office", "floor": "Ground Floor" }
+  ],
   "attendanceByDate": {
     "2026-01-16": {
-      "employee": { "in": 1, "out": 1 },
-      "Visitor": { "in": 1, "out": 1 }
+      "DADS | SHINAGAWA HEALTHCARE": {
+        "in": 5,
+        "out": 2,
+        "locations": {
+          "office-1": 2,
+          "office-2": 1,
+          "conference-room": 2
+        },
+        "employees": {
+          "office-1": [
+            { "name": "Dr. Sarah Johnson", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Medical Director" },
+            { "name": "Emily Rodriguez", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Nurse Practitioner" }
+          ],
+          "office-2": [
+            { "name": "Michael Chen", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Healthcare Administrator" }
+          ],
+          "conference-room": [
+            { "name": "Dr. Amanda Williams", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Senior Physician" },
+            { "name": "Lisa Martinez", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Medical Assistant" }
+          ]
+        }
+      },
+      "employee": { 
+        "in": 1, 
+        "out": 1,
+        "locations": {
+          "office-1": 1
+        },
+        "employees": {
+          "office-1": [
+            { "name": "John Martinez", "department": "employee" }
+          ]
+        }
+      },
+      "Visitor": { 
+        "in": 1, 
+        "out": 1,
+        "locations": {
+          "lobby": 1
+        },
+        "employees": {
+          "lobby": [
+            { "name": "Sarah Chen", "department": "Visitor" }
+          ]
+        }
+      }
     },
     "2026-01-19": {
-      "employee": { "in": 3, "out": 2 },
-      "FONTERRA": { "in": 2, "out": 2 }
+      "DADS | SHINAGAWA HEALTHCARE": {
+        "in": 8,
+        "out": 1,
+        "locations": {
+          "office-1": 3,
+          "office-2": 2,
+          "conference-room": 1,
+          "cafeteria": 2
+        },
+        "employees": {
+          "office-1": [
+            { "name": "Dr. Sarah Johnson", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Medical Director" },
+            { "name": "Emily Rodriguez", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Nurse Practitioner" },
+            { "name": "Kevin Park", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Lab Technician" }
+          ],
+          "office-2": [
+            { "name": "Michael Chen", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Healthcare Administrator" },
+            { "name": "Jessica Lee", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Billing Specialist" }
+          ],
+          "conference-room": [
+            { "name": "Dr. Amanda Williams", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Senior Physician" }
+          ],
+          "cafeteria": [
+            { "name": "Lisa Martinez", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Medical Assistant" },
+            { "name": "Robert Thompson", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Receptionist" }
+          ]
+        }
+      },
+      "employee": { 
+        "in": 3, 
+        "out": 2,
+        "locations": {
+          "office-1": 2,
+          "server-room": 1
+        },
+        "employees": {
+          "office-1": [
+            { "name": "Maria Santos", "department": "employee" },
+            { "name": "Robert Kim", "department": "employee" }
+          ],
+          "server-room": [
+            { "name": "David Johnson", "department": "employee" }
+          ]
+        }
+      },
+      "FONTERRA": { 
+        "in": 2, 
+        "out": 2,
+        "locations": {
+          "warehouse": 2
+        },
+        "employees": {
+          "warehouse": [
+            { "name": "Carlos Reyes", "department": "FONTERRA" },
+            { "name": "Ana Dela Cruz", "department": "FONTERRA" }
+          ]
+        }
+      }
     },
     "2026-01-20": {
-      "Visitor": { "in": 1, "out": 1 }
+      "DADS | SHINAGAWA HEALTHCARE": {
+        "in": 6,
+        "out": 3,
+        "locations": {
+          "office-1": 2,
+          "office-2": 2,
+          "engineering": 2
+        },
+        "employees": {
+          "office-1": [
+            { "name": "Dr. Sarah Johnson", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Medical Director" },
+            { "name": "Emily Rodriguez", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Nurse Practitioner" }
+          ],
+          "office-2": [
+            { "name": "Michael Chen", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Healthcare Administrator" },
+            { "name": "Jessica Lee", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Billing Specialist" }
+          ],
+          "engineering": [
+            { "name": "Tom Anderson", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Medical Equipment Tech" },
+            { "name": "Rachel Green", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Biomedical Engineer" }
+          ]
+        }
+      },
+      "Visitor": { 
+        "in": 1, 
+        "out": 1,
+        "locations": {
+          "lobby": 1
+        },
+        "employees": {
+          "lobby": [
+            { "name": "Michael Brown", "department": "Visitor" }
+          ]
+        }
+      }
     },
     "2026-01-27": {
-      "employee": { "in": 1, "out": 1 },
-      "admin": { "in": 1, "out": 1 },
-      "HOME CREDIT CONSUMER FINANCE PHIL": { "in": 0, "out": 33 },
-      "GREENLIGHT": { "in": 0, "out": 18 },
-      "SHINAGAWA LASIK": { "in": 0, "out": 56 },
-      "STEEL ASIA MANUFACTURING": { "in": 0, "out": 86 }
+      "DADS | SHINAGAWA HEALTHCARE": {
+        "in": 7,
+        "out": 2,
+        "locations": {
+          "office-1": 3,
+          "office-2": 2,
+          "server-room": 1,
+          "conference-room": 1
+        },
+        "employees": {
+          "office-1": [
+            { "name": "Dr. Sarah Johnson", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Medical Director" },
+            { "name": "Emily Rodriguez", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Nurse Practitioner" },
+            { "name": "Kevin Park", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Lab Technician" }
+          ],
+          "office-2": [
+            { "name": "Michael Chen", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Healthcare Administrator" },
+            { "name": "Jessica Lee", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Billing Specialist" }
+          ],
+          "server-room": [
+            { "name": "Thomas Wright", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "IT Specialist" }
+          ],
+          "conference-room": [
+            { "name": "Dr. Amanda Williams", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Senior Physician" }
+          ]
+        }
+      },
+      "employee": { 
+        "in": 1, 
+        "out": 1,
+        "locations": {
+          "office-1": 1
+        },
+        "employees": {
+          "office-1": [
+            { "name": "Jennifer Lee", "department": "employee" }
+          ]
+        }
+      },
+      "admin": { 
+        "in": 1, 
+        "out": 1,
+        "locations": {
+          "office-2": 1
+        },
+        "employees": {
+          "office-2": [
+            { "name": "Patricia Garcia", "department": "admin" }
+          ]
+        }
+      },
+      "HOME CREDIT CONSUMER FINANCE PHIL": { 
+        "in": 0, 
+        "out": 33,
+        "locations": {}
+      },
+      "GREENLIGHT": { 
+        "in": 0, 
+        "out": 18,
+        "locations": {}
+      },
+      "SHINAGAWA LASIK": { 
+        "in": 0, 
+        "out": 56,
+        "locations": {}
+      },
+      "STEEL ASIA MANUFACTURING": { 
+        "in": 0, 
+        "out": 86,
+        "locations": {}
+      }
     },
     "2026-01-28": {
-      "employee": { "in": 1, "out": 0 },
-      "INFINIVAN": { "in": 1, "out": 20 },
-      "SHINAGAWA LASIK": { "in": 2, "out": 54 },
-      "HOME CREDIT CONSUMER FINANCE PHIL": { "in": 0, "out": 90 },
-      "GREENLIGHT": { "in": 0, "out": 17 },
-      "VANGUARD AESTHETICS": { "in": 0, "out": 2 },
-      "JAPAN TOBACCO INTERNATIONAL": { "in": 0, "out": 7 },
-      "JAPAN TOBACCO INTERNATIONAL|INFINIVAN": { "in": 0, "out": 1 },
-      "CITIMAX": { "in": 0, "out": 2 },
-      "SENTINEL INTEGRATED SERVICES": { "in": 0, "out": 1 },
-      "CITIMAX-SECURITY GUARD": { "in": 0, "out": 1 },
-      "STEEL ASIA MANUFACTURING": { "in": 0, "out": 95 }
+      "DADS | SHINAGAWA HEALTHCARE": {
+        "in": 9,
+        "out": 1,
+        "locations": {
+          "office-1": 3,
+          "office-2": 3,
+          "conference-room": 2,
+          "cafeteria": 1
+        },
+        "employees": {
+          "office-1": [
+            { "name": "Dr. Sarah Johnson", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Medical Director" },
+            { "name": "Emily Rodriguez", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Nurse Practitioner" },
+            { "name": "Kevin Park", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Lab Technician" }
+          ],
+          "office-2": [
+            { "name": "Michael Chen", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Healthcare Administrator" },
+            { "name": "Jessica Lee", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Billing Specialist" },
+            { "name": "Thomas Wright", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "IT Specialist" }
+          ],
+          "conference-room": [
+            { "name": "Dr. Amanda Williams", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Senior Physician" },
+            { "name": "Lisa Martinez", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Medical Assistant" }
+          ],
+          "cafeteria": [
+            { "name": "Robert Thompson", "department": "DADS | SHINAGAWA HEALTHCARE", "role": "Receptionist" }
+          ]
+        }
+      },
+      "employee": { 
+        "in": 1, 
+        "out": 0,
+        "locations": {
+          "office-1": 1
+        },
+        "employees": {
+          "office-1": [
+            { "name": "James Wilson", "department": "employee" }
+          ]
+        }
+      },
+      "INFINIVAN": { 
+        "in": 1, 
+        "out": 20,
+        "locations": {
+          "warehouse": 1
+        },
+        "employees": {
+          "warehouse": [
+            { "name": "Ricardo Tan", "department": "INFINIVAN" }
+          ]
+        }
+      },
+      "SHINAGAWA LASIK": { 
+        "in": 2, 
+        "out": 54,
+        "locations": {
+          "office-2": 1,
+          "conference-room": 1
+        },
+        "employees": {
+          "office-2": [
+            { "name": "Dr. Amanda Cruz", "department": "SHINAGAWA LASIK" }
+          ],
+          "conference-room": [
+            { "name": "Lisa Fernandez", "department": "SHINAGAWA LASIK" }
+          ]
+        }
+      },
+      "HOME CREDIT CONSUMER FINANCE PHIL": { 
+        "in": 0, 
+        "out": 90,
+        "locations": {}
+      },
+      "GREENLIGHT": { 
+        "in": 0, 
+        "out": 17,
+        "locations": {}
+      },
+      "VANGUARD AESTHETICS": { 
+        "in": 0, 
+        "out": 2,
+        "locations": {}
+      },
+      "JAPAN TOBACCO INTERNATIONAL": { 
+        "in": 0, 
+        "out": 7,
+        "locations": {}
+      },
+      "JAPAN TOBACCO INTERNATIONAL|INFINIVAN": { 
+        "in": 0, 
+        "out": 1,
+        "locations": {}
+      },
+      "CITIMAX": { 
+        "in": 0, 
+        "out": 2,
+        "locations": {}
+      },
+      "SENTINEL INTEGRATED SERVICES": { 
+        "in": 0, 
+        "out": 1,
+        "locations": {}
+      },
+      "CITIMAX-SECURITY GUARD": { 
+        "in": 0, 
+        "out": 1,
+        "locations": {}
+      },
+      "STEEL ASIA MANUFACTURING": { 
+        "in": 0, 
+        "out": 95,
+        "locations": {}
+      }
     }
+  },
+  "accessLogs": {
+    "systemEvents": [
+      {
+        "eventid": "3676",
+        "trxntime": "2026-02-09 05:40:38.000",
+        "scpid": null,
+        "trxntype": "Login",
+        "trxnsourceid": null,
+        "trxnsource": "Chrome 144.0.0.0 Windows 10",
+        "lastname": "admin",
+        "firstname": "admin",
+        "middlename": null,
+        "internalnumber": null,
+        "message": "",
+        "facilitycode": "-1",
+        "eventstype": "1"
+      },
+      {
+        "eventid": "3675",
+        "trxntime": "2026-02-09 04:21:30.000",
+        "scpid": null,
+        "trxntype": "Login",
+        "trxnsourceid": null,
+        "trxnsource": "Chrome 144.0.0.0 Windows 10",
+        "lastname": "admin",
+        "firstname": "admin",
+        "middlename": null,
+        "internalnumber": null,
+        "message": "",
+        "facilitycode": "-1",
+        "eventstype": "1"
+      },
+      {
+        "eventid": "3674",
+        "trxntime": "2026-02-09 04:08:01.000",
+        "scpid": null,
+        "trxntype": "Login",
+        "trxnsourceid": null,
+        "trxnsource": "Chrome 144.0.0.0 Windows 10",
+        "lastname": "admin",
+        "firstname": "admin",
+        "middlename": null,
+        "internalnumber": null,
+        "message": "",
+        "facilitycode": "-1",
+        "eventstype": "1"
+      },
+      {
+        "eventid": "3673",
+        "trxntime": "2026-02-08 02:09:11.000",
+        "scpid": null,
+        "trxntype": "Login",
+        "trxnsourceid": null,
+        "trxnsource": "Chrome 144.0.0.0 Windows 10",
+        "lastname": "admin",
+        "firstname": "admin",
+        "middlename": null,
+        "internalnumber": null,
+        "message": "",
+        "facilitycode": "-1",
+        "eventstype": "1"
+      },
+      {
+        "eventid": "3672",
+        "trxntime": "2026-02-07 16:22:50.000",
+        "scpid": null,
+        "trxntype": "Login",
+        "trxnsourceid": null,
+        "trxnsource": "Chrome 144.0.0.0 Windows 10",
+        "lastname": "admin",
+        "firstname": "admin",
+        "middlename": null,
+        "internalnumber": null,
+        "message": "",
+        "facilitycode": "-1",
+        "eventstype": "1"
+      },
+      {
+        "eventid": "3671",
+        "trxntime": "2026-02-06 13:18:32.000",
+        "scpid": null,
+        "trxntype": "Login",
+        "trxnsourceid": null,
+        "trxnsource": "Chrome 144.0.0.0 Windows 10",
+        "lastname": "admin",
+        "firstname": "admin",
+        "middlename": null,
+        "internalnumber": null,
+        "message": "",
+        "facilitycode": "-1",
+        "eventstype": "1"
+      },
+      {
+        "eventid": "3670",
+        "trxntime": "2026-02-02 05:53:09.000",
+        "scpid": null,
+        "trxntype": "Set Accessgroup",
+        "trxnsourceid": null,
+        "trxnsource": "Chrome 144.0.0.0 Windows 10",
+        "lastname": "admin",
+        "firstname": "admin",
+        "middlename": null,
+        "internalnumber": null,
+        "message": "uid: 8accessgroup: dadsaccessgroup: qqqqaccessgroup: FONTERRAaccessgroup: Visitoraccessgroup: Ruth's Chris Steakhouseaccessgroup: Shinagawa Healthcareaccessgroup: STEEL ASIA MANUFACTURINGaccessgroup: XIAOMIaccessgroup: HOME CREDIT CONSUMER FINANCE PHILaccessgroup: GREENLIGHTaccessgroup: CHECaccessgroup: CMIaccessgroup: LEBARSA LAWaccessgroup: VANGUARD AESTHETICSaccessgroup: NOONA BUSINESS CONS SERVICESaccessgroup: KAMALAYANaccessgroup: JAPAN TOBACCO INTERNATIONALaccessgroup: KOTRAaccessgroup: MINDRAYaccessgroup: XIAOMIaccessgroup: DIAGEO PHILIPPINESaccessgroup: INFINIVANaccessgroup: MARUBENI ASIAN POWER PHILaccessgroup: COPENHAGEN INFRASTRUCTUREaccessgroup: MAHARLIKA INVESTMENT CORPORATIONaccessgroup: CITIMAXaccessgroup: SENTINEL INTEGRATED SERVICESaccessgroup: CITIMAX-SECURITY GUARD",
+        "facilitycode": "-1",
+        "eventstype": "1"
+      },
+      {
+        "eventid": "3669",
+        "trxntime": "2026-02-02 05:53:05.000",
+        "scpid": null,
+        "trxntype": "Set Accessgroup",
+        "trxnsourceid": null,
+        "trxnsource": "Chrome 144.0.0.0 Windows 10",
+        "lastname": "admin",
+        "firstname": "admin",
+        "middlename": null,
+        "internalnumber": null,
+        "message": "uid: 8accessgroup: qqqqaccessgroup: SHINAGAWA LASIKaccessgroup: FONTERRAaccessgroup: Visitoraccessgroup: Ruth's Chris Steakhouseaccessgroup: Shinagawa Healthcareaccessgroup: STEEL ASIA MANUFACTURINGaccessgroup: XIAOMIaccessgroup: HOME CREDIT CONSUMER FINANCE PHILaccessgroup: GREENLIGHTaccessgroup: CHECaccessgroup: CMIaccessgroup: LEBARSA LAWaccessgroup: VANGUARD AESTHETICSaccessgroup: NOONA BUSINESS CONS SERVICESaccessgroup: KAMALAYANaccessgroup: JAPAN TOBACCO INTERNATIONALaccessgroup: KOTRAaccessgroup: MINDRAYaccessgroup: XIAOMIaccessgroup: DIAGEO PHILIPPINESaccessgroup: INFINIVANaccessgroup: MARUBENI ASIAN POWER PHILaccessgroup: COPENHAGEN INFRASTRUCTUREaccessgroup: MAHARLIKA INVESTMENT CORPORATIONaccessgroup: CITIMAXaccessgroup: SENTINEL INTEGRATED SERVICESaccessgroup: CITIMAX-SECURITY GUARD",
+        "facilitycode": "-1",
+        "eventstype": "1"
+      },
+      {
+        "eventid": "3668",
+        "trxntime": "2026-02-02 05:52:48.000",
+        "scpid": null,
+        "trxntype": "update accesgroup",
+        "trxnsourceid": null,
+        "trxnsource": "Chrome 144.0.0.0 Windows 10",
+        "lastname": "admin",
+        "firstname": "admin",
+        "middlename": null,
+        "internalnumber": null,
+        "message": "agid: 1agname: dadstzoneid: 1elevid: 2doors: lowzone elevbdoors: 2ndfloorextdoors: 2ndfloorentdoors: mzlane4extdoors: mzlane4entdoors: mzlane3extdoors: mzlane3entdoors: mzlane2extdoors: mzlane2entdoors: mzlane1extdoors: mzlane1entdoors: hzlane3extdoors: hzlane3entdoors: hzlane2extdoors: hzlane1extdoors: hzlane1ent",
+        "facilitycode": "-1",
+        "eventstype": "1"
+      },
+      {
+        "eventid": "3667",
+        "trxntime": "2026-02-02 05:52:39.000",
+        "scpid": null,
+        "trxntype": "Login",
+        "trxnsourceid": null,
+        "trxnsource": "Chrome 144.0.0.0 Windows 10",
+        "lastname": "admin",
+        "firstname": "admin",
+        "middlename": null,
+        "internalnumber": null,
+        "message": "",
+        "facilitycode": "-1",
+        "eventstype": "1"
+      }
+    ],
+    "entries": []
   }
 }

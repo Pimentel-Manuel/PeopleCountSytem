@@ -18,11 +18,62 @@
 }
 
 .navbar-brand {
-    font-size: 1.25rem;
-    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
 }
 
 #dtLive {
     font-family: monospace;
     letter-spacing: 1px;
+}
+
+.dept-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.dept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15) !important;
+}
+
+.dept-card.selected-dept {
+    border: 3px solid #3b82f6 !important;
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3) !important;
+    transform: scale(1.02);
+}
+
+.location-breakdown {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.location-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15) !important;
+}
+
+.employee-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Toggle buttons active state */
+.btn-group .btn.active {
+    background-color: #ffffff !important;
+    color: #1e293b !important;
+    border-color: #ffffff !important;
 }
