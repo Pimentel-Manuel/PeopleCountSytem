@@ -1,0 +1,28 @@
+.chart-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Centers the headcount number inside the doughnut chart */
+.circle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+#dtLive {
+    font-family: monospace;
+    letter-spacing: 1px;
+}

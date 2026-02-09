@@ -1,0 +1,54 @@
+{
+  "departments": [
+    { "name": "employee" },
+    { "name": "admin" },
+    { "name": "INFINIVAN" },
+    { "name": "SHINAGAWA LASIK" },
+    { "name": "FONTERRA" },
+    { "name": "Visitor" },
+    { "name": "HOME CREDIT CONSUMER FINANCE PHIL" },
+    { "name": "GREENLIGHT" },
+    { "name": "VANGUARD AESTHETICS" },
+    { "name": "JAPAN TOBACCO INTERNATIONAL" },
+    { "name": "JAPAN TOBACCO INTERNATIONAL|INFINIVAN" },
+    { "name": "CITIMAX" },
+    { "name": "SENTINEL INTEGRATED SERVICES" },
+    { "name": "CITIMAX-SECURITY GUARD" },
+    { "name": "STEEL ASIA MANUFACTURING" }
+  ],
+  "attendanceByDate": {
+    "2026-01-16": {
+      "employee": { "in": 1, "out": 1 },
+      "Visitor": { "in": 1, "out": 1 }
+    },
+    "2026-01-19": {
+      "employee": { "in": 3, "out": 2 },
+      "FONTERRA": { "in": 2, "out": 2 }
+    },
+    "2026-01-20": {
+      "Visitor": { "in": 1, "out": 1 }
+    },
+    "2026-01-27": {
+      "employee": { "in": 1, "out": 1 },
+      "admin": { "in": 1, "out": 1 },
+      "HOME CREDIT CONSUMER FINANCE PHIL": { "in": 0, "out": 33 },
+      "GREENLIGHT": { "in": 0, "out": 18 },
+      "SHINAGAWA LASIK": { "in": 0, "out": 56 },
+      "STEEL ASIA MANUFACTURING": { "in": 0, "out": 86 }
+    },
+    "2026-01-28": {
+      "employee": { "in": 1, "out": 0 },
+      "INFINIVAN": { "in": 1, "out": 20 },
+      "SHINAGAWA LASIK": { "in": 2, "out": 54 },
+      "HOME CREDIT CONSUMER FINANCE PHIL": { "in": 0, "out": 90 },
+      "GREENLIGHT": { "in": 0, "out": 17 },
+      "VANGUARD AESTHETICS": { "in": 0, "out": 2 },
+      "JAPAN TOBACCO INTERNATIONAL": { "in": 0, "out": 7 },
+      "JAPAN TOBACCO INTERNATIONAL|INFINIVAN": { "in": 0, "out": 1 },
+      "CITIMAX": { "in": 0, "out": 2 },
+      "SENTINEL INTEGRATED SERVICES": { "in": 0, "out": 1 },
+      "CITIMAX-SECURITY GUARD": { "in": 0, "out": 1 },
+      "STEEL ASIA MANUFACTURING": { "in": 0, "out": 95 }
+    }
+  }
+}
